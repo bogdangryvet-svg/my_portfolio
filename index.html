@@ -3,12 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Моє портфоліо</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Ваше Ім'я — Портфоліо</title>
+  <meta name="description" content="Портфоліо: роботи, навички та контакти.">
+
+  <!-- Шрифт Inter (безкоштовний, Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Привіт, я Богдан</h1>
-  <p>Тут буде моє портфоліо.</p>
-  <script src="js/script.js"></script>
+
+  <!-- ===== ГОЛОВА (HEADER) — буде в кроці 2 ===== -->
+  <header class="site-header" id="top">
+    <div class="container">
+      <p>Тут буде шапка з меню</p>
+    </div>
+  </header>
+
+  <!-- ===== ТІЛО (MAIN) ===== -->
+  <main>
+
+    <!-- Hero — крок 3 -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <h1>Привіт, я Ваше Ім'я</h1>
+        <p class="lead">Тут буде підзаголовок про те, чим ви займаєтесь.</p>
+        <a href="#contacts" class="btn btn--light">Зв'язатися</a>
+      </div>
+    </section>
+
+    <!-- Вступ — крок 4 -->
+    <section class="section" id="intro">
+      <div class="container">
+        <h2>Заголовок секції</h2>
+        <p>Це приклад звичайного абзацу тексту. Він потрібен, щоб перевірити шрифт, розмір і міжрядковий інтервал. Пізніше тут буде розповідь про вас.</p>
+        <a href="#works" class="btn">Чорна кнопка</a>
+        <a href="#works" class="btn btn--outline">Кнопка з контуром</a>
+      </div>
+    </section>
+
+    <!-- Роботи — крок 5 -->
+    <section class="section section--gray" id="works">
+      <div class="container">
+        <h2>Мої роботи</h2>
+        <h3>Підзаголовок третього рівня</h3>
+        <p class="text-small">Дрібний текст для підписів і приміток.</p>
+      </div>
+    </section>
+
+    <!-- Про мене та навички — крок 6 -->
+    <section class="section" id="about"></section>
+
+    <!-- Контакти — крок 7 -->
+    <section class="section section--dark" id="contacts"></section>
+
+  </main>
+
+  <!-- ===== НОГИ (FOOTER) — буде в кроці 8 ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="text-small">© 2026 Ваше Ім'я</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
