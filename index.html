@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ваше Ім'я — Портфоліо</title>
-  <meta name="description" content="Портфоліо: роботи, навички та контакти.">
-
+ <title>Bohdan Sheremeta – Portfolio</title>
+<meta name="description" content="Portfolio von Bohdan Sheremeta: Arbeiten, Werdegang und Kompetenzen.">
+  
   <!-- Шрифт Inter (безкоштовний, Google Fonts) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,9 +16,27 @@
 <body>
 
   <!-- ===== ГОЛОВА (HEADER) — буде в кроці 2 ===== -->
-  <header class="site-header" id="top">
-    <div class="container">
-      <p>Тут буде шапка з меню</p>
+   <header class="site-header" id="top">
+    <div class="container site-header__inner">
+
+      <a href="#top" class="logo">Bohdan Sheremeta</a>
+
+      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="main-nav" aria-label="Hauptmenü">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#ueber-mich">Über mich</a></li>
+          <li><a class="nav__link" href="#arbeiten">Arbeiten</a></li>
+          <li><a class="nav__link" href="#werdegang">Werdegang</a></li>
+          <li><a class="nav__link" href="#kompetenzen">Kompetenzen</a></li>
+          <li><a class="nav__link" href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+
     </div>
   </header>
 
@@ -30,12 +48,12 @@
       <div class="container">
         <h1>Привіт, я Ваше Ім'я</h1>
         <p class="lead">Тут буде підзаголовок про те, чим ви займаєтесь.</p>
-        <a href="#contacts" class="btn btn--light">Зв'язатися</a>
+        <a 	href="#kontakt" class="btn btn--light">Зв'язатися</a>
       </div>
     </section>
 
     <!-- Вступ — крок 4 -->
-    <section class="section" id="intro">
+    <section class="section" id="ueber-mich">
       <div class="container">
         <h2>Заголовок секції</h2>
         <p>Це приклад звичайного абзацу тексту. Він потрібен, щоб перевірити шрифт, розмір і міжрядковий інтервал. Пізніше тут буде розповідь про вас.</p>
@@ -45,7 +63,7 @@
     </section>
 
     <!-- Роботи — крок 5 -->
-    <section class="section section--gray" id="works">
+   <section class="section section--gray" id="arbeiten">
       <div class="container">
         <h2>Мої роботи</h2>
         <h3>Підзаголовок третього рівня</h3>
@@ -54,7 +72,7 @@
     </section>
 
     <!-- Про мене та навички — крок 6 -->
-    <section class="section" id="about"></section>
+    <section class="section" id="kompetenzen"></section>
 
     <!-- Контакти — крок 7 -->
     <section class="section section--dark" id="contacts"></section>
@@ -62,7 +80,7 @@
   </main>
 
   <!-- ===== НОГИ (FOOTER) — буде в кроці 8 ===== -->
-  <footer class="site-footer">
+ <footer class="site-footer" id="kontakt">
     <div class="container">
       <p class="text-small">© 2026 Ваше Ім'я</p>
     </div>
